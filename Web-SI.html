@@ -3,166 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prodi Sistem Informasi Universitas Darma Persada</title>
-  <link rel="shortcut icon" href="./image/favicon.ico"/>
-  <link rel="stylesheet" href="style.css">
+  <title>Prodi Sistem Informasi UNSADA</title>
+  <link rel="shortcut icon" href="./image/favicon.ico">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Times New Roman', Times, serif;
-      background-image: url("image/unsada.jpg");
+      background: url('image/unsada.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      min-height: 100vh;
+      margin: 0;
+      padding: 0;
     }
-
-    ul {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      list-style: none;
+    header, footer {
       background-color: #d2e8ff;
-      padding: 0 20px;
-      overflow: hidden;
-    }
-
-    ul li {
-      position: relative;
-    }
-
-    ul li a, .dropbtn {
-      display: block;
-      color: black;
-      text-decoration: none;
-      padding: 14px 16px;
-    }
-
-    ul li a:hover, .dropdown:hover .dropbtn {
-      color: rgb(31, 122, 242);
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      padding: 10px;
-      display: block;
-      text-align: left;
-      color: black;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #dbe9f6;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .header-title {
-      padding: 20px;
-      background-color: rgba(255,255,255,0.7);
       text-align: center;
+      padding: 20px;
     }
-
-    .profile-section {
-      max-width: 700px;
-      margin: 40px auto;
-      background-color: rgba(255,255,255,0.85);
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      background-color: #d2e8ff;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      padding: 14px 20px;
+      display: block;
+    }
+    nav ul li a:hover {
+      color: #1f7af2;
+    }
+    section {
+      background-color: rgba(255, 255, 255, 0.9);
+      max-width: 900px;
+      margin: 30px auto;
       padding: 20px;
       border-radius: 10px;
     }
-
-    .profile-section h5 {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-      text-align: center;
+    h2, h3 {
+      color: #003366;
     }
-
-    .profile-section p {
-      text-align: justify;
-      font-size: 1.1em;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #d2e8ff;
-      color: black;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-
-    img.logo {
-      width: 100px;
-      height: 100px;
+    .image-section img {
+      max-width: 100%;
+      height: auto;
       display: block;
-      margin: 20px auto;
+      margin: 10px auto;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
 
+<header>
+  <img src="image/logo.jpg" alt="Logo UNSADA" width="100" height="100">
+  <h1>Program Studi Sistem Informasi</h1>
+  <p>Universitas Darma Persada</p>
+</header>
+
+<nav>
   <ul>
-    <li><a href="#"><strong>Program Studi Sistem Informasi</strong></a></li>
-    <li><a href="#profile">Profile</a></li>
-    <li><a href="#home">Home</a></li>
-
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">Akademik</a>
-      <div class="dropdown-content">
-        <a href="#">Akreditasi dan Peraturan Akademik</a>
-        <a href="#">Program Sarjana</a>
-        <a href="#">Beasiswa</a>
-      </div>
-    </li>
-
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">Fasilitas</a>
-      <div class="dropdown-content">
-        <a href="#">Lab Komputer</a>
-        <a href="#">Kantin Teknik</a>
-        <a href="#">Tempat Ibadah</a>
-      </div>
-    </li>
-
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">Kemahasiswaan</a>
-      <div class="dropdown-content">
-        <a href="#">BEM</a>
-        <a href="#">Himpunan</a>
-        <a href="#">UKM</a>
-      </div>
-    </li>
+    <li><a href="#profil">Profil</a></li>
+    <li><a href="#visi-misi">Visi & Misi</a></li>
+    <li><a href="#akreditasi">Akreditasi</a></li>
+    <li><a href="#fasilitas">Fasilitas</a></li>
+    <li><a href="#kemahasiswaan">Kemahasiswaan</a></li>
+    <li><a href="#kontak">Kontak</a></li>
   </ul>
+</nav>
 
-  <img src="image/logo.jpg" alt="Logo UNSADA" class="logo">
+<section id="profil">
+  <h2>Profil</h2>
+  <p>Program Studi Sistem Informasi didirikan pada tahun 2003, berada di bawah Fakultas Teknik UNSADA. Dikelola oleh Yayasan Melati Sakura dan bernaung di bawah PPIJ.</p>
+  <div class="image-section">
+    <img src="image/profil-unsada.jpg" alt="Gedung UNSADA">
+  </div>
+</section>
 
-  <section class="profile-section" id="profile">
-    <h5>Universitas Darma Persada</h5>
-    <p>
-      Universitas Darma Persada (disingkat UNSADA) merupakan universitas yang berlokasi di Jakarta Timur yang diselenggarakan oleh Yayasan Melati Sakura, di bawah naungan Perhimpunan Persahabatan Indonesia-Jepang (PPIJ), sebagai Badan Hukum Penyelenggaranya.
-    </p>
-  </section>
+<section id="visi-misi">
+  <h2>Visi</h2>
+  <p>Menjadi program studi unggulan dalam pengembangan sistem informasi dan basis data yang dilandasi semangat monozukuri.</p>
+  <h2>Misi</h2>
+  <ul>
+    <li>Menyelenggarakan pendidikan berkualitas di bidang sistem informasi.</li>
+    <li>Melaksanakan penelitian dan pengabdian kepada masyarakat.</li>
+    <li>Mendukung pengembangan ilmu pengetahuan dan teknologi.</li>
+  </ul>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Program Studi Sistem Informasi - Universitas Darma Persada</p>
-  </footer>
+<section id="akreditasi">
+  <h2>Akreditasi</h2>
+  <ul>
+    <li>2010: Terakreditasi C (SK BAN-PT No. 025/BAN-PT/Ak-XIII/SI/XI/2010)</li>
+    <li>2016: Terakreditasi B (SK BAN-PT No. 0332/SK/BAN-PT/Akred/S/IV/2016)</li>
+  </ul>
+  <div class="image-section">
+    <img src="image/sertifikat-akreditasi.jpg" alt="Sertifikat Akreditasi">
+  </div>
+</section>
+
+<section id="fasilitas">
+  <h2>Fasilitas</h2>
+  <ul>
+    <li>Perpustakaan</li>
+    <li>Lab Komputer & Informatika</li>
+    <li>Masjid Baiturrahman</li>
+    <li>Graha Wira Bhakti</li>
+    <li>Wi-Fi, Area Parkir, Bus Kampus</li>
+  </ul>
+  <div class="image-section">
+    <img src="image/lab-komputer.jpg" alt="Lab Komputer">
+    <img src="image/perpustakaan.jpg" alt="Perpustakaan">
+  </div>
+</section>
+
+<section id="kemahasiswaan">
+  <h2>Kemahasiswaan</h2>
+  <ul>
+    <li>Kuliah Umum Cloud Computing</li>
+    <li>Workshop Laravel</li>
+    <li>Program MBKM</li>
+    <li>Beasiswa Yamaoka Foundation</li>
+    <li>Kunjungan Industri</li>
+  </ul>
+  <div class="image-section">
+    <img src="image/kegiatan-mahasiswa.jpg" alt="Kegiatan Mahasiswa">
+  </div>
+</section>
+
+<section id="kontak">
+  <h2>Kontak</h2>
+  <p>
+    Program Studi Sistem Informasi<br>
+    Fakultas Teknik, Universitas Darma Persada<br>
+    Taman Malaka Selatan, Pondok Kelapa, Jakarta Timur 13450<br>
+    Telepon: +62 21 8649059<br>
+    Email: kajursiunsada@unsada.ac.id<br>
+    Website: <a href="https://si.unsada.ac.id">https://si.unsada.ac.id</a>
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Program Studi Sistem Informasi - Universitas Darma Persada</p>
+</footer>
 
 </body>
 </html>
