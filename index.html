@@ -5,37 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Praktikum 8</title>
   <style>
+    :root {
+      --hijau-tua: #1e8449;
+      --hijau-muda: #d5f5e3;
+      --hijau-tengah: #27ae60;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      background-color: #bbedb7;
+      background-color: var(--hijau-muda);
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #23e78f;
+      background-color: var(--hijau-tua);
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
 
-    h1, h3 {
-      margin: 0 0 10px 0;
+    h1 {
+      margin-bottom: 10px;
     }
 
-    .link-container {
-      padding: 20px;
+    main {
+      padding: 30px 20px;
     }
 
-    .link-container a {
-      display: block;
-      margin: 8px 0;
-      color: #000;
+    h3 {
+      margin-bottom: 20px;
+      color: #145a32;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .button-container a {
       text-decoration: none;
     }
 
-    .link-container a:hover {
-      text-decoration: underline;
+    .btn {
+      background-color: var(--hijau-tengah);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #52be80;
+    }
+
+    .info-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #2e7d32;
     }
   </style>
 </head>
@@ -43,19 +79,23 @@
 <body>
 
 <header>
-  <h1>Praktikum 8 - Shafa Salsabilah Yasmin - 2024240023</h1>
+  <h1>Praktikum 8</h1>
+  <p>Shafa Salsabilah Yasmin - 2024240023</p>
 </header>
 
-<div class="link-container">
+<main>
   <h3>Berikut adalah tugas Praktikum Pemrograman Berbasis Web:</h3>
-  <a href="shafa-bakery.html">Shafa Bakery</a>
-  <a href="Web-SI.html">Prodi Sistem Informasi Universitas Darma Persada</a>
-  <a href="Database-SQL.html">Database SQL</a>
-</div>
+  <div class="button-container">
+    <a href="shafa-bakery.html" class="btn">Shafa Bakery</a>
+    <a href="Web-SI.html" class="btn">Prodi Sistem Informasi Universitas Darma Persada</a>
+    <a href="Database-SQL.html" class="btn">Database SQL</a>
+  </div>
 
-<div class="link-container">
-  <h3>Saya memilih GitHub Pages karena gratis, mudah digunakan, dan cocok untuk website statis seperti tugas praktikum ini. Tidak perlu konfigurasi server dan cukup upload file HTML untuk langsung online.</h3>
-</div>
+  <div class="info-box">
+    <h3>Alasan memilih GitHub Pages</h3>
+    <p>Saya memilih GitHub Pages karena gratis, mudah digunakan, dan cocok untuk website statis seperti tugas praktikum ini. Tidak perlu konfigurasi server dan cukup upload file HTML untuk langsung online.</p>
+  </div>
+</main>
 
 </body>
 </html>
